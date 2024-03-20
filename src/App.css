@@ -1,0 +1,201 @@
+.header {
+  max-width: 767px;
+  width: 100%;
+  /* height: 100px; */
+  padding: 80px 30px 30px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    span {
+      display: inline;
+    }
+    button {
+      img {
+        height: 15px;
+      }
+    }
+  }
+}
+
+.wrap_util_btn {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 17px;
+}
+/* .header .inner .top-title--header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+} */
+.header .inner .top-title--header {
+  font-weight: 600;
+  font-size: 18px;
+}
+.header .inner .util_btn:nth-child(1) img {
+  height: 18px;
+}
+.header .inner .goback_btn img {
+  height: 17px;
+}
+
+.wrap_tab_menu {
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  margin: 0 auto;
+  .tab_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 673px;    
+    /* margin: 0 0 0 20px; */
+    margin: 0 auto;
+    /* background-color: #fff; */
+    /* border-radius: 20px 0 0 20px; */
+    border-radius: 20px;
+    padding: 20px 20px 10px;
+    .item--tab_menu {
+      width: calc(100% / 6 - 30px);
+      figure {
+        max-height: 82px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      figure::before {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #3333338e;
+        display: block;
+      }
+      span {
+        color: #888888ad;
+        display: inline-block;
+        margin-top: 7px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+      }
+    } 
+    .item--tab_menu.on figure::before {
+      display: none;
+    } 
+    .item--tab_menu.on span {
+      color: #333;
+    }
+  }
+}
+
+.tour_list {
+  max-width: 610px;
+  width: calc(100% - 20px);
+  margin: 20px auto 0;
+  img {
+    width: 100%;
+  }
+  .item {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 32px 20px 20px;
+    /* box-shadow: inset 0 -4px 3px #88888875; */
+    /* box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07); */
+    box-shadow: rgb(149 157 165 / 30%) 0px 8px 24px;
+    border-radius: 20px;
+
+    h4 {
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+    figure {
+      height: 230px;
+      overflow: hidden;
+      border-radius: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .item--text {
+      .location {
+        margin: 7px 0 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 23px;
+        background: url(../public/img/location.png) 0 center / 13px no-repeat;
+        color: #444444;
+        font-size: 14px;
+      }
+      button {
+        width: 60%;
+        height: 38px;
+        /* background-color: #04bade */;
+        background-color: #006ca5;
+        color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        border: none;
+        margin: 10px 0 10px;
+        font-family: "Noto Sans KR", sans-serif;
+        /* box-shadow: rgba(149, 157, 165, 0.11) 0px 8px 24px; */
+      }
+  }    
+  }
+}
+
+.footer {
+  height: 56px;
+  /* border-radius: 30px; */
+  background-color: #fff;
+  box-shadow: rgb(149 157 165 / 30%) 0px 8px 24px;
+  border-radius: 13px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  max-width: 767px;
+  width: calc(100% - 17px);
+  z-index: 1;
+  padding: 0 22px;
+  .inner {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    height: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+/* @media screen and (max-width:700px) {
+  .tab_menu {
+    margin: 0 auto;
+  }
+}
+ */

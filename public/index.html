@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <header class="header">
+    <div class="inner">
+      <button class="goback_btn">
+        <img src="img/back.png" alt="이전으로 돌아가기">
+      </button>
+      <span class="top-title--header">여행 어디가지</span>
+      <div class="wrap_util_btn">
+        <button class="util_btn">
+          <img src="img/loupe_flat_gray.png" alt="검색하기">
+        </button>
+        <button class="util_btn">
+          <img src="img/icons8-menu-50_gray.png" alt="메뉴보기">
+        </button><!-- .wrap_util_btn end -->
+        
+      </div>
+    </div>
+  </header>
+  <!-- <div class="big-title">
+    <h3></h3>
+  </div> -->
+  <div class="wrap_tab_menu">
+    <div class="tab_menu">
+      <div class="item--tab_menu on">
+        <a href="#">
+          <figure>
+            <img src="img/부산테마여행.png" alt="부산테마여행">
+          </figure>
+          <span>부산테마여행</span>
+        </a>
+      </div> <!-- 01 -->
+      <div class="item--tab_menu">
+        <a href="#">
+          <figure>
+          <img src="img/도심속액티비티.png" alt="도심속액티비티">
+        </figure>
+        <span>도심속액티비티</span>
+        </a>        
+      </div>
+      <div class="item--tab_menu">
+        <a href="#">
+          <figure>
+          <img src="img/소품샵투어.png" alt="소품샵투어">
+        </figure>
+        <span>소품샵투어</span>
+        </a>        
+      </div>
+      <div class="item--tab_menu">
+        <a href="#">
+          <figure>
+          <img src="img/여행과문학.png" alt="여행과문학">
+        </figure>
+        <span>여행과문학</span>
+        </a>        
+      </div>
+      <div class="item--tab_menu">
+        <a href="#">
+          <figure>
+          <img src="img/식도락여행.png" alt="식도락여행">
+        </figure>
+        <span>식도락여행</span>
+        </a>        
+      </div>
+      <div class="item--tab_menu">
+        <a href="#">
+          <figure>
+          <img src="img/자연속힐링.png" alt="자연속힐링">
+        </figure>
+        <span>자연속힐링</span>
+        </a>        
+      </div>
+    </div><!-- .tab_menu end -->
+  </div>
+  <div id="root"> <!-- root 안이 Tour 관련 -->
+  </div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <footer class="footer">
+      <div class="inner">
+        <ul>
+          <li><a href="#"><img src="img/home.png" alt="홈으로 돌아가기"></a></li>
+          <li><a href="#"><img src="img/alarm.png" alt="알림 보기"></a></li>
+          <li><a href="#"><img src="img/wish.png" alt="책갈피 확인하기"></a></li>
+          <li><a href="#"><img src="img/user.png" alt="내 계정 보러가기"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  line-height: 1;
+  color: #333;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  /* background-color: #f5f5f5; */
+  /* background-color: #f2f3f5; */
+  background-color: #fff;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
